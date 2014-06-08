@@ -1,0 +1,4 @@
+RewriteEngine On
+ErrorDocument 404 /404.html
+RewriteCond %{HTTP_HOST} ^(.*)\.fredyframework\.com
+RewriteRule ^(.*)$ http://fredyframework.com/%1$1 [P,NC,QSA]
